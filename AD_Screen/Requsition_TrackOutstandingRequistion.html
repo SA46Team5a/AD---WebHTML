@@ -2,9 +2,110 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <title>Track Requistion</title>
+
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="container">
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-9 text-center">
+                <h1>Outstanding Requistion Tracking</h1>
+
+            </div>
+        </div>
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-3 text-center">
+                <select class="form-control form-control-lg" name="DeptDropdownlist" id="DeptDropdownlist"
+                        onchange="ChangecatList()" text="Department" required>
+                    <option value="English Dept">English Dept</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Commerce Dept">Commerce Dept</option>
+                    <option value="Registrar Dept">Registrar Dept</option>
+                    <option value="Zoology Dept">Zoology Dept</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please provide a category.
+                </div>
+            </div>
+
+        </div>
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-3 text-center">
+                <select class="form-control form-control-lg" name="StatusDropdownlist" id="StatusDropdownlist"
+                        onchange="ChangecatList()" placeholder="Department" required>
+                    <option value="Ordered">Ordered</option>
+                    <option value="Delivered">Delivered</option>
+                </select>
+            </div>
+            <div class="invalid-feedback">
+                Please provide a category.
+            </div>
+
+        </div>
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-9 text-center">
+                <button id="btn_search" type="button" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-9 text-center">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Required Date</th>
+                            <th scope="col">Department</th>
+                            <th scope="col">Stationery Description/th>
+                            <th scope="col">User Quantity</th>
+                            <th scope="col">Required Quantity</th>
+                            <th scope="col">Order No.</th>
+                            <th scope="col">Total Quantity</th>
+                            <th scope="col">Order Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01-01-2018</td>
+                            <td>English Dep</td>
+                            <td>2B pencil</td>
+                            <td>20</td>
+                            <td>50</td>
+                            <td>Z123</td>
+                            <td>70</td>
+                            <td>Ordered</td>
+
+                        </tr>
+                        <tr>
+                            <td>02-02-2018</td>
+                            <td>Zoology</td>
+                            <td>Blue pen</td>
+                            <td>150</td>
+                            <td>200</td>
+                            <td>Z234</td>
+                            <td>350</td>
+                            <td>Ordered</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-9 text-center">
+                <button id="btn_reorder" type="button" class="btn btn-primary">Reorder</button>
+            </div>
+        </div>
+    </div>
+   
+
 </body>
 </html>

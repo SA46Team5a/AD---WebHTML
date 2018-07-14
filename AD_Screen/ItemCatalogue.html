@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <title>Item Catalogue</title>
+    <style>
+        body {
+            padding-top: 50px;
+        }
+
+        .dropdown.dropdown-lg .dropdown-menu {
+            margin-top: -1px;
+            padding: 6px 20px;
+        }
+
+        .input-group-btn .btn-group {
+            display: flex !important;
+        }
+
+        .btn-group .btn {
+            border-radius: 0;
+            margin-left: 0;
+        }
+
+            .btn-group .btn:last-child {
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+
+        .btn-group .form-horizontal .btn[type="submit"] {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        .form-horizontal .form-group {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .form-group .form-control:last-child {
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+        @media screen and (min-width: 768px) {
+            #adv-search {
+                width: 500px;
+                margin: 0 auto;
+            }
+
+            .dropdown.dropdown-lg {
+                position: static !important;
+            }
+
+                .dropdown.dropdown-lg .dropdown-menu {
+                    min-width: 500px;
+                }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center">Item Catalogue</h1>
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-9 text-center">
+                <div class="input-group" id="adv-search">
+                    <input type="text" class="form-control" placeholder="Search for stationery" />
+                    <div class="input-group-btn">
+                        <div class="btn-group" role="group">
+                            <div class="dropdown dropdown-lg">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"></button>
+                                <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                    <form class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <label for="filter">Filter by</label>
+                                            <select class="form-control">
+                                                <option value="0" selected>Pencil</option>
+                                                <option value="1">Pen</option>
+                                                <option value="2">Envelope</option>
+                                            </select>
+                                            <div class="invalid-feedback">
+                                                Please provide a category.
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="Stationery Description" placeholder="Stationery Description">
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary">Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-9 text-center">
+                <table id="ItemCatalogueTable" class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Category</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Reorder Level</th>
+                            <th scope="col">Current Stock</th>
+                            <th scope="col">Reorder Quantity</th>
+                            <th scope="col">Reorder</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pencil</td>
+                            <td>2B Pencil</td>
+                            <td>50</td>
+                            <td>20</td>
+                            <td>50</td>
+                            <td> <button id="btn_add" class="btn btn-primary">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Pen</td>
+                            <td>Blue Pen</td>
+                            <td>50</td>
+                            <td>40</td>
+                            <td>50</td>
+                            <td> <button id="btn_search" class="btn btn-primary">Add</button></td>
+                        </tr>
+                        <tr>
+                            <td>Ruler</td>
+                            <td>Ruler"6"</td>
+                            <td>30</td>
+                            <td>39</td>
+                            <td>50</td>
+                            <td> <button id="btn_search" class="btn btn-primary">Add</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row justify-content-md-center mt-3">
+            <div class="col-6 text-center">
+                <button id="btn_cancel" class="btn btn-secondary">Cancel</button>
+            </div>
+            <div class="col-6 text-center">
+                <button id="btn_next" class="btn btn-secondary">Next</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

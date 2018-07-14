@@ -75,16 +75,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HtmlPage1.html" />
+    <Content Include="HtmlPage3.html" />
+    <Content Include="ItemCatalogue.html" />
+    <Content Include="OrderQuantity.html" />
+    <Content Include="PlaceOrder.html" />
+    <Content Include="RequistionFormsToApprove.html" />
     <Content Include="Requsition_TrackOutstandingRequistion.html" />
+    <Content Include="StationeryRequestForm.html" />
+    <Content Include="Testing.html" />
+    <Content Include="testScreen4.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2.2.10TrackOutstandingRequisition.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="2.2.10TrackOutstandingRequisition.designer.cs">
-      <DependentUpon>2.2.10TrackOutstandingRequisition.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>
