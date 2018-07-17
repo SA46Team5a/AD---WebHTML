@@ -15,46 +15,52 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center">Confrim Reorder Quantity</h1>
+        <h1 class="text-center pb-3">Confirm Reorder Quantity</h1>
         <div class="row justify-content-md-center mt-3">
-            <div class="col-6 text-center">
+            <div class="col-8 text-center">
                 <table id="ConfrimReorderQuantityTable" class="table">
                     <thead>
                         <tr>
                             <th scope="col" class="text-center">Category</th>
                             <th scope="col" class="text-center">Description</th>
-                            <th scope="col" class="text-center">Reorder Quantity</th>
+                            <th scope="col" class="text-center align-self-center col-3">Reorder Quantity</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Pencil</td>
                             <td>2B Pencil</td>
-                            <td class="text-center"><input type="text" class="col-3 text-center" id="Qunatity_text" placeholder="1"></td>
+                            <td class="text-center">
+                                <input type="text" class="text-center form-control col-6 mx-auto" id="Quantity_text" placeholder="1">
+                            </td>
                         </tr>
                         <tr>
                             <td>Pen</td>
                             <td>Blue Pen</td>
-                            <td class="text-center"><input type="text" class="col-3 text-center" id="Qunatity_text" placeholder="1"></td>
+                            <td class="text-center">
+                                <input type="text" class="text-center form-control col-6 mx-auto" id="Quantity_text" placeholder="1">
+                            </td>
 
                         </tr>
                         <tr>
                             <td>Ruler</td>
                             <td>Ruler"6"</td>
-                            <td class="text-center"><input type="text" class="col-3 text-center" id="Qunatity_text" placeholder="1"></td>
+                            <td class="text-center">
+                                <input type="text" class="text-center form-control col-6 mx-auto" id="Quantity_text" placeholder="1">
+                            </td>
 
                     </tbody>
                 </table>
             </div>
         </div>
-        <div class="row justify-content-md-center mt-3">
-            <div class="col-4 text-center">
-                <button id="btn_back" class="btn btn-secondary">Back</button>
+        <div class="row justify-content-md-center mt-3 col 8">
+                <div class="col-4 text-center">
+                    <button id="btn_back" class="btn btn-secondary">Back</button>
+                </div>
+                <div class="col-4 text-center">
+                    <button id="btn_next" class="btn btn-primary">Next</button>
+                </div>
             </div>
-            <div class="col-4 text-center">
-                <button id="btn_next" class="btn btn-secondary">Next</button>
-            </div>
-        </div>
     </div>
 </body>
 </html>
