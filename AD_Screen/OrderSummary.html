@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center pb-5">
+            <h1 class="text-center mb=3">Order Summary</h1>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="card col-8">
+                <div class="card-body">
+                    <div class="row justify-content-md-start">
+                        <div class="col-2 text-right">
+                            <p>Order ID:</p>
+                        </div>
+                        <div class="col-10 text-left">
+                            <label id="orderID">
+                                1001
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center mt-1">                   
+                            <table id="OrderSummaryTable" class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="text-left">Category</th>
+                                        <th scope="col" class="text-left">Description</th>
+                                        <th scope="col" class="text-left">Required Quantity</th>
+                                        <th scope="col" class="text-left">Available Quantity</th>
+                                        <th scope="col" class="text-left">Supplier</th>
+                                        <th scope="col" class="text-left">Total Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pencil</td>
+                                        <td>2B Pencil</td>
+                                        <td>90</td>
+                                        <td>50</td>
+                                        <td>Supplier 1</td>
+                                        <td>$100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pencil</td>
+                                        <td>2B Pencil</td>
+                                        <td>40</td>
+                                        <td>40</td>
+                                        <td>Supplier 2</td>
+                                        <td>$80</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Pen</td>
+                                        <td>Blue Pen</td>
+                                        <td>100</td>
+                                        <td>100</td>
+                                        <td>Supplier 3</td>
+                                        <td>$400</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Total:</td>
+                                        <td><label>$580</label></td>
+                                    </tr>
+                                </tbody>
+                            </table>                        
+                    </div>
+                </div>
+            </div>
+        </div>       
+        <div class="row justify-content-md-center mt-5">
+            <div class="col-4 text-center">
+                <input type="submit" class="btn btn-primary" id="btn_downloadPo"
+                       value="Download PO"  />
+            </div>
+            <div class="col-4 text-center">
+                <button id="btn_home" class="btn btn-secondary">Home</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center pb-5">
+            <h1 class="text-center mb=3">Submit Invoice</h1>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="form-group col-md-4">
+                <label for="orderid">OrderID</label>
+                <select id="orderid" class="form-control">
+                    <option selected>1001</option>
+                    <option>1002</option>
+                    <option>1003</option>
+                </select>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="form-group col-md-4">
+                <label for="supplier">Supplier</label>
+                <select id="supplier" class="form-control">
+                    <option selected> Cheap Stationer </option>
+                    <option>ALPHA Office Supplies</option>
+                    <option> BANES Shop </option>
+                    <option> OMEGA Stationery Supplier </option>
+                </select>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-4">
+                <label>Upload Invoice</label>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="
+                           Invoice" required>
+                    <label class="custom-file-label" id="invoice" for="Invoice">Choose Invoice...</label>
+                    <div class="invalid-feedback">Example invalid custom file feedback</div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center"  style="position:absolute; bottom: 50px; width: 100%;">
+            <div class="col-md-12 text-center">
+                <input type="submit" id="btn_Submit" class="btn btn-primary"
+                       value="Submit" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

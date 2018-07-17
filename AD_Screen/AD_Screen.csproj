@@ -75,16 +75,25 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppointDepRep.html" />
+    <Content Include="ChangeCollectionPoint.html" />
+    <Content Include="DeletgateAuthority.html" />
     <Content Include="HtmlPage1.html" />
-    <Content Include="HtmlPage3.html" />
     <Content Include="ItemCatalogue.html" />
+    <Content Include="ManageMonthlyStockDiscrepancy.html" />
     <Content Include="OrderQuantity.html" />
+    <Content Include="OrderSummary.html" />
     <Content Include="PlaceOrder.html" />
+    <Content Include="ReceivedPurchaseOrdersDetails.html" />
+    <Content Include="ReceivedPurchaseOrdersList.html" />
     <Content Include="RequistionFormsToApprove.html" />
     <Content Include="Requsition_TrackOutstandingRequistion.html" />
-    <Content Include="StationeryRequestForm.html" />
-    <Content Include="Testing.html" />
-    <Content Include="testScreen4.html" />
+    <Content Include="SearchRequisitionForm.html" />
+    <Content Include="StationeryRequestForm - Copy.html" />
+    <Content Include="ReSubmitStationeryRequestForm.html" />
+    <Content Include="SubmitInvoice.html" />
+    <Content Include="ViewStationeryCatalogue.html" />
+    <Content Include="ViewStationeryRequisitionForm.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
