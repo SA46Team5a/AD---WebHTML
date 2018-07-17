@@ -13,7 +13,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <title>Track Requistion</title>
-
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -59,42 +63,53 @@
         </div>
         <div class="row justify-content-md-center mt-3">
             <div class="col-9 text-center">
-                <table class="table">
+                <table>
                     <thead>
                         <tr>
                             <th scope="col">Required Date</th>
                             <th scope="col">Department</th>
                             <th scope="col">Stationery Description/th>
-                            <th scope="col">User Quantity</th>
+                            <th scope="col">Quantity</th>
                             <th scope="col">Required Quantity</th>
                             <th scope="col">Order No.</th>
-                            <th scope="col">Total Quantity</th>
+                            <th scope="col">Suppliers</th>
+                            <th scope="col">Quantity</th>
                             <th scope="col">Order Status</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>01-01-2018</td>
-                            <td>English Dep</td>
-                            <td>2B pencil</td>
-                            <td>20</td>
-                            <td>50</td>
-                            <td>Z123</td>
+                            <td rowspan="3">01-01-2018</td>
+                            <td rowspan="3">English Dep</td>
+                            <td rowspan="3">2B pencil</td>
+                            <td rowspan="3">20</td>
+                            <td rowspan="3">50</td>
+                            <td rowspan="3">Z123</td>
+                            <td>Suppliers1</td>
                             <td>70</td>
                             <td>Ordered</td>
-
+                        </tr>
+                        <tr>
+                            <td>Suppliers2</td>
+                            <td>350</td>
+                            <td>Ordered</td>
+                        </tr>
+                        <tr>
+                            <td>Suppliers3</td>
+                            <td>350</td>
+                            <td>Ordered</td>
                         </tr>
                         <tr>
                             <td>02-02-2018</td>
                             <td>Zoology</td>
-                            <td>Blue pen</td>
+                            <td>Envelope</td>
                             <td>150</td>
                             <td>200</td>
                             <td>Z234</td>
+                            <td>Suppliers1</td>
                             <td>350</td>
                             <td>Ordered</td>
                         </tr>
-
                     </tbody>
                 </table>
             </div>
@@ -105,7 +120,5 @@
             </div>
         </div>
     </div>
-   
-
 </body>
 </html>

@@ -86,6 +86,9 @@
     <Content Include="PlaceOrder.html" />
     <Content Include="ReceivedPurchaseOrdersDetails.html" />
     <Content Include="ReceivedPurchaseOrdersList.html" />
+    <Content Include="ReorderCostAnalysisReport.html" />
+    <Content Include="RequisitionCostAnalysisReport.html" />
+    <Content Include="RequisitionItemAnalysisReport.html" />
     <Content Include="RequistionFormsToApprove.html" />
     <Content Include="Requsition_TrackOutstandingRequistion.html" />
     <Content Include="SearchRequisitionForm.html" />
