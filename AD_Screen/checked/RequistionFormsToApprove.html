@@ -23,15 +23,15 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="row justify-content-center">
-                            <div class="col-4 text-left">
+                            <div class="col-6 text-left">
                                 <label id="approvedate">14-Jun-2018</label>
                             </div>
-                            <div class="col-4 text-right">
+                            <div class="col-6 text-right">
                                 <label id="approveperson">Jenny Wong Mei Lin</label>
                             </div>
                         </div>
-                        <div class="row justify-content-md-center mt-5">
-                            <div class="col-8 text-center">
+                        <div class="row justify-content-md-center mt-3">
+                            <div class="col-10 text-center">
                                 <table id="ConfrimReorderQuantityTable" class="table">
                                     <thead>
                                         <tr>
@@ -61,7 +61,7 @@
                             </div>
                         </div>
                         <div class="row justify-content-md-center ">
-                            <div class="col-8 text-center">
+                            <div class="col-10 text-center">
                                 <div class="input-group">
                                     <textarea class="form-control" placeholder="Remark(Optional)" ></textarea>
                                 </div>
@@ -112,6 +112,98 @@
                         </div>
                     </div>
                 </div>
+                <div class="card mt-3 mb-3">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="col-6 text-left">
+                                    <label id="approvedate">14-Jun-2018</label>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <label id="approveperson">Jenny Wong Mei Lin</label>
+                                </div>
+                            </div>
+                            <div class="row justify-content-md-center mt-3">
+                                <div class="col-10 text-center">
+                                    <table id="ConfrimReorderQuantityTable" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="text-center">Description</th>
+                                                <th scope="col" class="text-center">Quantity</th>
+                                                <th scope="col" class="text-center">Unit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2B Pencil</td>
+                                                <td>100</td>
+                                                <td>Doven</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Blue Pen</td>
+                                                <td>60</td>
+                                                <td>Box</td>
+    
+                                            </tr>
+                                            <tr>
+                                                <td>Ruler"6"</td>
+                                                <td>170</td>
+                                                <td>Doven</td>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row justify-content-md-center ">
+                                <div class="col-10 text-center">
+                                    <div class="input-group">
+                                        <textarea class="form-control" placeholder="Remark(Optional)" ></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-md-center mt-3">
+                                <div class="col-4 text-center">
+                                    <!-- Trigger the modal with a button -->
+                                    <button type="button" class="btn btn-info " data-toggle="modal" data-target="#myModalapprove">Approve</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="myModalapprove" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-body ">
+                                                   <div class="text-center">
+                                                       <p>Jenny Wong Mei Lin’s Requisition Form(10 July 2018 ) has been approved</p>
+                                                   </div> 
+                                                </div>
+                                                <div class="modal-footer text-center">                                                                                            
+                                                       <button type="submit" id="popupok" data-dismiss="modal" class="btn btn-default">OK</button>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <!-- Trigger the modal with a button -->
+                                    <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#myModalreject">Reject</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="myModalreject" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-body " >
+                                                    <div class="text-center">
+                                                        <p>Jenny Wong Mei Lin’s Requisition Form(10 July 2018 ) has been rejected</p>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer text-center">
+                                                    <button type="submit" id="popupok" data-dismiss="modal" class="btn btn-default">OK</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
       </div>

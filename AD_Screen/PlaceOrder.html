@@ -1,20 +1,26 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
     <title></title>
     <title></title>
 </head>
+
 <body>
     <div class="container">
         <h1 class="text-center">Place Order</h1>
@@ -26,9 +32,12 @@
         <div class="row justify-content-md-center ">
             <div class="col-2">
                 <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-supplier1-list" data-toggle="list" href="#list-supplier1" role="tab" aria-controls="supplier1">Supplier1</a>
-                    <a class="list-group-item list-group-item-action" id="list-supplier2-list" data-toggle="list" href="#list-supplier2" role="tab" aria-controls="supplier2">Supplier2</a>
-                    <a class="list-group-item list-group-item-action" id="list-supplier3-list" data-toggle="list" href="#list-supplier3" role="tab" aria-controls="supplier3">Supplier3</a>
+                    <a class="list-group-item list-group-item-action active" id="list-supplier1-list" data-toggle="list" href="#list-supplier1"
+                        role="tab" aria-controls="supplier1">Supplier1</a>
+                    <a class="list-group-item list-group-item-action" id="list-supplier2-list" data-toggle="list" href="#list-supplier2" role="tab"
+                        aria-controls="supplier2">Supplier2</a>
+                    <a class="list-group-item list-group-item-action" id="list-supplier3-list" data-toggle="list" href="#list-supplier3" role="tab"
+                        aria-controls="supplier3">Supplier3</a>
                 </div>
             </div>
             <div class="col-6">
@@ -65,10 +74,26 @@
 
         </div>
         <div class="row justify-content-md-center mt-3">
-            <div class="col-8 text-left">
-                <h4>Supplier 1</h4>
-            </div>
+
             <div class=" col-8">
+                <div class="card">
+                    <div class="col-8 text-left card-header">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h4>Supplier 1</h4>
+                        </button>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                            non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+                            moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                            et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                            synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+
                 <table id="Supplier1OrderTable" class="table">
                     <thead>
                         <tr>
@@ -85,14 +110,18 @@
                             <td>2B Pencil</td>
                             <td>90</td>
                             <td>$2</td>
-                            <td class="text-center"><input type="text" class="col-3 text-center" id="Qunatity_text" placeholder="1"></td>
+                            <td class="text-center">
+                                <input type="text" class="col-3 text-center" id="Qunatity_text" placeholder="1">
+                            </td>
                         </tr>
                         <tr>
                             <td>Pen</td>
                             <td>Blue Pen</td>
                             <td>100</td>
                             <td>$4</td>
-                            <td class="text-center"><input type="text" class="col-3 text-center" id="Qunatity_text" placeholder="1"></td>
+                            <td class="text-center">
+                                <input type="text" class="col-3 text-center" id="Qunatity_text" placeholder="1">
+                            </td>
 
                         </tr>
 
@@ -122,14 +151,18 @@
                             <td>2B Pencil</td>
                             <td>90</td>
                             <td>$2</td>
-                            <td class="text-center"><input type="text" class="col-3 text-center" id="Qunatity_text" placeholder="1"></td>
+                            <td class="text-center">
+                                <input type="text" class="col-3 text-center" id="Qunatity_text" placeholder="1">
+                            </td>
                         </tr>
                         <tr>
                             <td>Pen</td>
                             <td>Blue Pen</td>
                             <td>100</td>
                             <td>$4</td>
-                            <td class="text-center"><input type="text" class="col-3 text-center" id="Qunatity_text" placeholder="1"></td>
+                            <td class="text-center">
+                                <input type="text" class="col-3 text-center" id="Qunatity_text" placeholder="1">
+                            </td>
 
                         </tr>
 
@@ -159,14 +192,18 @@
                             <td>2B Pencil</td>
                             <td>90</td>
                             <td>$2</td>
-                            <td class="text-center"><input type="text" class="col-3 text-center" id="Qunatity_text" placeholder="1"></td>
+                            <td class="text-center">
+                                <input type="text" class="col-3 text-center" id="Qunatity_text" placeholder="1">
+                            </td>
                         </tr>
                         <tr>
                             <td>Pen</td>
                             <td>Blue Pen</td>
                             <td>100</td>
                             <td>$4</td>
-                            <td class="text-center"><input type="text" class="col-3 text-center" id="Qunatity_text" placeholder="1"></td>
+                            <td class="text-center">
+                                <input type="text" class="col-3 text-center" id="Qunatity_text" placeholder="1">
+                            </td>
 
                         </tr>
 
@@ -185,4 +222,5 @@
         </div>
     </div>
 </body>
+
 </html>

@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+
+    <title>Deledate Authority</title>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center pb-5">
+            <h1 class="text-center mb=3">Delegate Authority</h1>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class=" col-8">
+                <form>
+                    <div class="form-group">
+                        <label for="Delegatedperson">Delegated person with authority</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Mrs Pamela Kow</option>
+                            <option>Mr Wee Kian Fatt</option>
+                            <option> Mr Mohd.Azman</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+
+                        <div class="row justify-content-md-center">
+                            <div class="col-6 text-left">Start Date:</div>
+                            <div class="col-6 text-left">End Date:</div>
+                        </div>
+                        <div class="row justify-content-md-center pb-5">
+                            <div class="col-6 text-left">
+                                <input type="date" name="bday" min="1000-01-01" max="3000-12-31" class="form-control">
+                            </div>
+                            <div class="col-6 text-left">
+                                <input type="date" name="bday" min="1000-01-01" max="3000-12-31" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row justify-content-md-center pt-5">
+            <div class="col-2 text-left">
+                <a tabindex="0" id="confirm" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="Delegate Authority"
+                    data-content="<employee name> has been granted authority from <startDate> to <endDate>
+                            " data-placement="top">Confirm</a>
+            </div>
+            <div class="col-2 text-center">
+                <button type="button" id="home" class="btn btn-secondary ">Home</button>
+            </div>
+            <div class="col-2 text-right">
+                <a tabindex="0" id="confirm" class="btn btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Delegate Authority"
+                    data-content="<employee name>'s authority has been rescinded
+                                " data-placement="top">Confirm</a>
+            </div>
+        </div>
+    </div>
+    <script>    
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+            $('.popover').css('background-color', 'red');
+        });
+
+
+    </script>
+
+
+
+</body>
+
+</html>

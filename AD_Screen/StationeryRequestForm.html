@@ -22,13 +22,13 @@
         <div class="card">
             <div class="card-body">
                 <div class="row justify-content-md-center">
-                    <div class=" col-8">
-                        <table id="Supplier3OrderTable" class="table">
+                    <div class=" col-12">
+                        <table id="Supplier3OrderTable" class="table pb-5">
                             <thead>
                                 <tr>
                                     <th scope="col" class="text-left">Description</th>
                                     <th scope="col" class="text-left">Unit of Measure</th>
-                                    <th scope="col" class="text-center">Quantity Requested</th>
+                                    <th scope="col" class="text-center col-2">Quantity Requested</th>
                                     <th scope="col" class="text-left">Action</th>
 
                                 </tr>
@@ -37,7 +37,7 @@
                                 <tr>
                                     <td>Clips Double 1</td>
                                     <td>Doven</td>
-                                    <td class="text-center"><input type="text" class="col-5 text-center" id="QtyReq_text" placeholder="1"></td>
+                                    <td class="text-center"><input type="text" class="text-center form-control" id="QtyReq_text" placeholder="1"></td>
                                     <td><button id="btn_delete" class="btn btn-danger">Delete</button></td>
                                 </tr>
                                 <tr>
@@ -59,7 +59,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="row justify-content-md-center pb-5">
+                <div class="row justify-content-md-center pb-3 pt-5">
                     <div class="col-4 text-center">
                         <button id="btn_back" class="btn btn-secondary">View Stationery to add</button>
                     </div>
@@ -70,7 +70,7 @@
             </div>
         </div>
         <div class="row justify-content-md-center mt-5">
-            <div class="col-8 text-right">
+            <div class="col-12 text-right">
                 <!-- Trigger the modal with a button -->
                 <button type="button" class="btn btn-info " data-toggle="modal" data-target="#myModal">Submit for approval</button>
 
