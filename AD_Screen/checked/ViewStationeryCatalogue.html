@@ -20,7 +20,10 @@
         <div class="row justify-content-md-center pb-5">
             <h1 class="text-center mb=3">Stationery Catalogue</h1>
         </div>
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-md-center my-auto">
+            <div class="align-middle"> 
+                Category:
+            </div>
             <div class="form-group col-md-3 text-center">
                 <select id="category " class="form-control">
                     <option selected>Clip</option>
@@ -40,8 +43,9 @@
                 <table id="StationeryCatalogueTable" class="table">
                     <thead>
                         <tr>       
-                            <th scope="col" class="text-left">Description</th>
-                            <th scope="col" class="text-left">Unit of Measure</th>
+                            <th scope="col" class="text-left col-6">Description</th>
+                            <th scope="col" class="text-center">Unit of Measure</th>
+                            <th scope="col" class="text-center">Quantity in Stock</th>
                             <th scope="col" class="text-center">Quantity for Request</th>
                             <th scope="col" class="text-left">Action</th>                           
                         </tr>
@@ -50,19 +54,22 @@
                         <tr>    
                             <td>2B Pencil</td>
                             <td class="text-center">Box</td>
-                            <td class="text-center"><input type="text" class="col-4" /></td>      
+                            <td class="text-center">50</td>
+                            <td class="text-center justify-content"><input type="text" class="form-control col-9 mx-auto" /></td>      
                             <td> <button id="btn_add" class="btn btn-primary">Add</button></td>
                         </tr>
                         <tr>
                             <td>2B Pencil</td>
                             <td class="text-center">Box</td>
-                            <td class="text-center"><input type="text" class="col-4" /></td>
+                            <td class="text-center">80</td>
+                            <td class="text-center"><input type="text" class="form-control col-9 mx-auto" /></td>
                             <td> <button id="btn_add" class="btn btn-primary">Add</button></td>
                         </tr>
                         <tr>
                             <td>Clips Paper Large</td>
                             <td class="text-center">Box</td>
-                            <td class="text-center"><input type="text" class="col-4" /></td>
+                            <td class="text-center">20</td>
+                            <td class="text-center"><input type="text" class="form-control col-9 mx-auto" /></td>
                             <td> <button id="btn_add" class="btn btn-primary">Add</button></td>
                         </tr>
                     </tbody>
